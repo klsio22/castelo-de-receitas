@@ -1,0 +1,42 @@
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign .sign-up,
+.sign .sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 9rem;
+  height: 48px;
+  border-radius: 50px;
+  border: 2px solid #1fb3e3;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sign .sign-up {
+  color: #1fb3e3;
+}
+
+.sign .sign-in {
+  background-color: #1fb3e3;
+  color: #fff;
+}
+/*# sourceMappingURL=header.css.map */

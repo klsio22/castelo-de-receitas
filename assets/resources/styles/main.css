@@ -1,0 +1,15 @@
+/* ========== Global ======= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 85.75%; /*15px*/
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: 400 16px 'Poppins' sans-serif;
+  min-width: 350px;
+}

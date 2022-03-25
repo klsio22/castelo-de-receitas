@@ -1,0 +1,28 @@
+.sign {
+  display: flex;
+  align-items: center;
+
+  .sign-up,
+  .sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 48px;
+    border-radius: 50px;
+    border: 2px solid #1fb3e3;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    position: initial;
+    text-transform: uppercase;  
+    text-decoration: none;
+  }
+  .sign-up {
+    color: #1fb3e3;
+  }
+  .sign-in {
+    background-color: #1fb3e3;
+    color: #fff;
+  }
+}
