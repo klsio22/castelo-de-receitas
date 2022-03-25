@@ -1,28 +1,69 @@
-.sign {
+header {
+  .main-header{
+    
+  }
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  .sign-up,
-  .sign-in {
+  .logo {
+    text-align: center;
+    h4 {
+      width: 10rem;
+    }
+  }
+
+  .send-recipes {
+    a{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+  }
+
+  .search {
+    margin-bottom: 2rem;
+    img {
+      position: relative;
+      left: 0.6rem;
+
+      top: 2.2rem;
+    }
+
+    input {
+      padding-left: 3rem;
+    }
+  }
+
+  .sign {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 9rem;
-    height: 48px;
-    border-radius: 50px;
-    border: 2px solid #1fb3e3;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: all 0.3s ease-in-out;
-    position: initial;
-    text-transform: uppercase;  
-    text-decoration: none;
-  }
-  .sign-up {
-    color: #1fb3e3;
-  }
-  .sign-in {
-    background-color: #1fb3e3;
-    color: #fff;
+
+    .sign-up,
+    .sign-in {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 8rem;
+      height: 48px;
+      border-radius: 50px;
+      border: 2px solid #1fb3e3;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+      position: initial;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .sign-up {
+      width: 6rem;
+      color: #1fb3e3;
+    }
+    .sign-in {
+      background-color: #1fb3e3;
+      color: #fff;
+    }
   }
 }

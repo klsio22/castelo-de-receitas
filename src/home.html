@@ -36,26 +36,43 @@
     <header class="p-3 bg-light text-black">
       <div class="container">
         <div
-          class="d-flex flex-wrap align-items-center justify-content-sm-between"
+          class=".main-header d-flex flex-wrap align-items-center justify-content-sm-between"
         >
           <a
             href="/"
-            class="d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none"
+            class="logo d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none"
           >
-            <h3>Castelo de Receitas</h3>
+            <h4>
+              Castelo
+              <br />de<br />
+              Receitas
+            </h4>
           </a>
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+
+          <div class="send-recipes btn-group">
+            <a
+              class="btn text-uppercase border border-primary rounded-pill "
+              href="#"
+              role="button"
+            >
+              <img class="" src="/public/kitchen-hat.svg" alt="" />
+              <span>Envie sua receita </span>
+            </a>
+          </div>
+
+          <form class="search col-12 col-lg-auto">
+            <img src="/public/bloom.jpg" alt="" />
             <input
               type="search"
-              class="form-control form-control-dark"
-              placeholder="Search..."
+              class="form-control form-control-dark rounded-pill fs-6"
+              placeholder="Pesquise receitas"
               aria-label="Search"
             />
           </form>
 
           <div class="sign text-end btn-group">
-            <a type="button" class="sign-up  me-2">Login</a>
-            <a type="button" class="sign-in btn-2 ">Cadastre-se</a>
+            <a type="button" class="sign-up me-2">Login</a>
+            <a type="button" class="sign-in btn-2">Cadastre-se</a>
           </div>
         </div>
       </div>
