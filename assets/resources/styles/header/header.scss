@@ -1,39 +1,28 @@
-header {
-  .main-header{
-    
-  }
+header.top-header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
-  .logo {
-    text-align: center;
-    h4 {
-      width: 10rem;
-    }
-  }
 
   .send-recipes {
-    a{
+    a {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    
   }
 
   .search {
     margin-bottom: 2rem;
     img {
       position: relative;
-      left: 0.6rem;
-
-      top: 2.2rem;
+      left: 1rem;
+      top: 2.6rem;
     }
 
     input {
-      padding-left: 3rem;
+      padding: 0.8rem 0 0.8rem 5rem;
     }
   }
 
@@ -58,12 +47,17 @@ header {
       text-decoration: none;
     }
     .sign-up {
-      width: 6rem;
       color: #1fb3e3;
     }
     .sign-in {
       background-color: #1fb3e3;
       color: #fff;
     }
+  }
+
+  .title-main{
+    padding: 2vh 22.5vw;
+    background-color: #1fb3e3;
+    color: #fff;
   }
 }

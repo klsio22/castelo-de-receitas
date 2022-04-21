@@ -15,6 +15,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- reset -->
 
     <link rel="stylesheet" href="/assets/resources/styles/main.css" />
@@ -29,34 +36,32 @@
     />
 
     <!-- CSS created -->
-
     <link rel="stylesheet" href="/assets/resources/styles/header/header.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/home/home.css" />
+
   </head>
   <body>
-    <header class="p-3 bg-light text-black">
+    <header class="p-3 bg-light text-black top-header">
       <div class="container">
         <div
-          class=".main-header d-flex flex-wrap align-items-center justify-content-sm-between"
+          class="d-flex flex-wrap align-items-center justify-content-sm-between"
         >
           <a
             href="/"
             class="logo d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none"
           >
-            <h4>
-              Castelo
-              <br />de<br />
-              Receitas
-            </h4>
+            <img src="/public/logo.svg" alt="" />
           </a>
 
           <div class="send-recipes btn-group">
             <a
-              class="btn text-uppercase border border-primary rounded-pill "
+              class="btn text-uppercase border border-primary rounded-pill"
               href="#"
               role="button"
             >
               <img class="" src="/public/kitchen-hat.svg" alt="" />
-              <span>Envie sua receita </span>
+              <span>Envie sua receita</span>
             </a>
           </div>
 
@@ -65,7 +70,7 @@
             <input
               type="search"
               class="form-control form-control-dark rounded-pill fs-6"
-              placeholder="Pesquise receitas"
+              placeholder="Busque uma receita"
               aria-label="Search"
             />
           </form>
@@ -76,11 +81,76 @@
           </div>
         </div>
       </div>
+      <section class="title-main">
+        <h2 class="container">Escolha uma receita da comunidade</h2>
+      </section>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container">
+        <header class="p-3 bg-light  main-header ">
+          <div class="numbers-page">
+            <p class="">
+              <span class="text">Número de Receitas: </span>
+              <span class="quantity-revenue">20</span>
+            </p>
+            <p class="">
+              <span class="text">Usuario: </span>
+              <span class="quantity-user">10</span>
+            </p>
+          </div>
+          <div class="title">
+            <h2>Novas receitas</h2>
+          </div>
+          <div class="selector">
+            <span>Ordenar por:</span>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>data e hora</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </header>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+        repellat eius, vel ipsa aut minus quod officiis alias, accusantium at
+        adipisci cum non voluptatem nisi doloribus odio. Dolores, provident
+        voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+        numquam accusantium exercitationem nulla temporibus quos, suscipit
+        optio. Illum necessitatibus sint velit, iste rem assumenda quisquam quia
+        quidem facilis, adipisci culpa?
+      </div>
+    </main>
 
-    <footer></footer>
+    <footer class="text-center ">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center p-4 border-bottom newsletter-container"
+      >
+        <!-- Left -->
+        <div class="text-center newsletter-content">
+          <h3>
+            Quer ficar por dentro das novidades do Castelo de Receitas, criar
+            foodlists e receber dicas?
+          </h3>
+          <button class="btn sign-in">Cadastre-se</button>
+        </div>
+        <!-- Left -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Copyright -->
+      <div class="copywriter text-lg-center p-4">
+        <div class="container text-black">
+          ©2019, Castelo de receitas Brasil Ltda.
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+            >Todos os direitos reservados. Política de Privacidade</a
+          >
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

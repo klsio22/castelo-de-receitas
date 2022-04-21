@@ -1,4 +1,4 @@
-header {
+header.top-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,15 +12,7 @@ header {
       flex-wrap: wrap;
 }
 
-header .logo {
-  text-align: center;
-}
-
-header .logo h4 {
-  width: 10rem;
-}
-
-header .send-recipes a {
+header.top-header .send-recipes a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,21 +22,21 @@ header .send-recipes a {
   gap: 10px;
 }
 
-header .search {
+header.top-header .search {
   margin-bottom: 2rem;
 }
 
-header .search img {
+header.top-header .search img {
   position: relative;
-  left: 0.6rem;
-  top: 2.2rem;
+  left: 1rem;
+  top: 2.6rem;
 }
 
-header .search input {
-  padding-left: 3rem;
+header.top-header .search input {
+  padding: 0.8rem 0 0.8rem 5rem;
 }
 
-header .sign {
+header.top-header .sign {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,8 +45,8 @@ header .sign {
           align-items: center;
 }
 
-header .sign .sign-up,
-header .sign .sign-in {
+header.top-header .sign .sign-up,
+header.top-header .sign .sign-in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,12 +69,17 @@ header .sign .sign-in {
   text-decoration: none;
 }
 
-header .sign .sign-up {
-  width: 6rem;
+header.top-header .sign .sign-up {
   color: #1fb3e3;
 }
 
-header .sign .sign-in {
+header.top-header .sign .sign-in {
+  background-color: #1fb3e3;
+  color: #fff;
+}
+
+header.top-header .title-main {
+  padding: 2vh 22.5vw;
   background-color: #1fb3e3;
   color: #fff;
 }
