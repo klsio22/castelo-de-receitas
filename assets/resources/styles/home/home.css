@@ -1,4 +1,38 @@
-main header .numbers-page {
-  color: black;
+main .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-header .numbers-page {
+  color: #1fb3e3;
+}
+
+main .main-header .title {
+  font-family: 'Cookie', cursive;
+}
+
+main .main-header .selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-header .selector .order {
+  width: 65%;
+}
+
+main .main-header .selector .form-select {
+  border: 1px solid #1fb3e3;
+  border-radius: 2.25rem;
 }
 /*# sourceMappingURL=home.css.map */
