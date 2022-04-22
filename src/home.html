@@ -35,6 +35,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- CSS created -->
     <link rel="stylesheet" href="/assets/resources/styles/header/header.css" />
     <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
@@ -111,13 +117,60 @@
             </select>
           </div>
         </header>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-        repellat eius, vel ipsa aut minus quod officiis alias, accusantium at
-        adipisci cum non voluptatem nisi doloribus odio. Dolores, provident
-        voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-        numquam accusantium exercitationem nulla temporibus quos, suscipit
-        optio. Illum necessitatibus sint velit, iste rem assumenda quisquam quia
-        quidem facilis, adipisci culpa?
+
+        <div class="swiper list-recipes">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/public/01.jpg" alt="Bombom de Rum" />
+              <div class="container text-white previous-recipe">
+                <h6 class="title-recipe">Bombom de Rum</h6>
+                <div class="level-recipe" id="level-recipe">
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <span class="level" id="leuvel">Fácil</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="/public/02.jpg" alt="Bolo Piscina" />
+              <div class="container text-white previous-recipe">
+                <h6 class="title-recipe">Bolo Piscina</h6>
+                <div class="level-recipe" id="level-recipe">
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <span class="level" id="leuvel">Fácil</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="/public/03.jpg" alt="Cake Pop Cookies'n Cream" />
+              <div class="container text-white previous-recipe">
+                <h6 class="title-recipe">Cake Pop Cookies'n Cream</h6>
+                <div class="level-recipe" id="level-recipe">
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <span class="level" id="leuvel">Fácil</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="/public/04.jpg" alt="Sorvete de Banana e Amêndoas" />
+              <div class="container text-white previous-recipe">
+                <h6 class="title-recipe">Sorvete de Banana e Amêndoas</h6>
+                <div class="level-recipe" id="level-recipe">
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <div class="squere"></div>
+                  <span class="level" id="leuvel">Fácil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </main>
 
@@ -166,5 +219,8 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/libraries/swipe-library.js"></script>
   </body>
 </html>
