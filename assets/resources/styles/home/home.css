@@ -68,14 +68,25 @@ main .swiper .swiper-slide {
   height: auto;
 }
 
+main .swiper .swiper-slide a {
+  text-decoration: none;
+}
+
+main .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 main .swiper .swiper-slide .previous-recipe {
   background-color: #7acaf0 !important;
   width: 100%;
-  height: 100%;
   padding: 1.25rem 0.75rem;
 }
 
 main .swiper .swiper-slide .previous-recipe .title-recipe {
+  width: 16rem;
   height: 3rem;
 }
 
@@ -83,6 +94,9 @@ main .swiper .swiper-slide .previous-recipe .level-recipe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -100,13 +114,5 @@ main .swiper .swiper-slide .previous-recipe .level-recipe .squere {
 
 main .swiper .swiper-slide .previous-recipe .level-recipe .squere:first-child {
   background-color: #1fb3e3;
-}
-
-main .swiper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=home.css.map */
