@@ -1,0 +1,24 @@
+main {
+  font-family: 'Poppins', sans-serif;
+  height: 60vh;
+}
+
+main .form-row .form-group label {
+  color: #1fb3e3;
+}
+
+main .form-row .form-group input {
+  border: 1px solid #1fb3e3;
+  width: 27vw;
+}
+
+main .form-group .btn-login {
+  width: 8rem;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #1fb3e3;
+  font-weight: 700;
+}
+/*# sourceMappingURL=login.css.map */
