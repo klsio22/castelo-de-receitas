@@ -1,5 +1,4 @@
 main {
-  
   height: 60vh;
 
   .form-row {
@@ -10,14 +9,13 @@ main {
 
       input {
         border: 1px solid #1fb3e3;
-        width: 27vw;
+       
       }
     }
   }
 
   .form-group {
-    .btn-login {
-      
+    .btn-register {
       width: 8rem;
       height: 48px;
       font-size: 18px;

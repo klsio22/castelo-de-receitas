@@ -8,10 +8,9 @@ main .form-row .form-group label {
 
 main .form-row .form-group input {
   border: 1px solid #1fb3e3;
-  width: 27vw;
 }
 
-main .form-group .btn-login {
+main .form-group .btn-register {
   width: 8rem;
   height: 48px;
   font-size: 18px;
@@ -20,4 +19,4 @@ main .form-group .btn-login {
   background-color: #1fb3e3;
   font-weight: 700;
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=register.css.map */

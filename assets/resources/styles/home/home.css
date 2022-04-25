@@ -79,6 +79,10 @@ main .swiper .swiper-slide img {
      object-fit: cover;
 }
 
+main .swiper .swiper-slide .recipe-item {
+  width: 100%;
+}
+
 main .swiper .swiper-slide .previous-recipe {
   background-color: #7acaf0 !important;
   width: 100%;

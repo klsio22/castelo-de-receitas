@@ -48,7 +48,10 @@
     <!-- CSS created -->
     <link rel="stylesheet" href="/assets/resources/styles/header/header.css" />
     <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
-    <link rel="stylesheet" href="/assets/resources/styles/home/home.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/resources/styles/register/register.css"
+    />
   </head>
   <body>
     <header class="p-3 bg-light text-black top-header">
@@ -89,7 +92,7 @@
               >Login</a
             >
             <a
-              href="/src/registrer-page.html"
+              href="/src/register-page.html"
               type="button"
               class="sign-in btn-2"
               >Cadastre-se</a
@@ -101,7 +104,79 @@
 
     <main>
       <div class="container">
-        registro
+        <div class="d-flex flex-wrap align-items-center flex-column mt-lg-5">
+          <div class="form-row">
+            <div class="form-group col-12 my-3">
+              <label for="email"
+                >*E-MAIL
+                <span class="info">(Seu email será seu login)</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                name="user_email"
+                id="email"
+                placeholder="*E-MAIL"
+                value=""
+              />
+              <span id="has-error-email" class="error"></span>
+            </div>
+
+            <div
+              class="d-flex flex-wrap align-items-center col-12 justify-content-between "
+            >
+              <div class="form-group col-md-5 col-12">
+                <label for="name">*NOME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="user_name"
+                  id="name"
+                  placeholder="*NOME"
+                  value=""
+                />
+                <span id="has-error-name" class="error"></span>
+              </div>
+
+              <div class="form-group col-md-6 col-12 ">
+                <label for="lastname">*SOBRENOME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="user_lastname"
+                  id="lastname"
+                  placeholder="*SOBRENOME"
+                  value=""
+                />
+                <span id="has-error-lastname" class="error"></span>
+              </div>
+            </div>
+
+            <div class="form-group col-md-12 col-12 my-3">
+              <label for="password">*CRIE UMA SENHA</label>
+              <input
+                type="password"
+                class="form-control"
+                name="user_password"
+                id="password"
+                placeholder="*CRIE UMA SENHA"
+                maxlength="10"
+              />
+              <span id="has-error-pass" class="error"></span>
+              <input type="hidden" name="user_id_social" id="id_social" />
+            </div>
+
+            <div class="form-group form-group-submit col-12 text-center my-5">
+              <button
+                class="btn btn-primary btn btn-register"
+                type="submit"
+                aria-label="Avançar complemento cadastro"
+              >
+                Cadastrar
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
