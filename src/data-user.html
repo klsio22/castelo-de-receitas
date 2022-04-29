@@ -48,7 +48,10 @@
     <!-- CSS created -->
     <link rel="stylesheet" href="/assets/resources/styles/header/header.css" />
     <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
-    <link rel="stylesheet" href="/assets/resources/styles/login/login.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/resources/styles/data-user/data-user.css"
+    />
   </head>
   <body>
     <header class="p-3 bg-light text-black top-header">
@@ -100,45 +103,94 @@
     </header>
 
     <main>
-      <div class="container my-5">
-        <div
-          class="d-flex flex-wrap align-items-center flex-column already-account__form login"
-        >
-          <h3>Entre com seu e-mail e senha:</h3>
-
+      <div
+        class="container d-flex justify-content-center align-content-between"
+      >
+        <form class="form-inline p-3 my-4 col-6">
           <div class="form-row">
-            <div class="form-group col-12 my-4">
-              <label for="email">*E-MAIL </label>
+            <div class="col-md-4 mb-3">
+              <label for="validationServer01" class="col-sm-4 col-form-label"
+                >Nome</label
+              >
+              <div class="col-sm-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationServer01"
+                  placeholder="Primeiro nome"
+                  value=""
+                  required
+                />
+              </div>
+
+              <div class="valid-feedback"></div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationServer02" class="col-sm-4 col-form-label"
+                >Sobrenome</label
+              >
               <input
                 type="text"
-                name="input_mail"
                 class="form-control"
-                id="email"
-                placeholder="*E-MAIL"
+                id="validationServer02"
+                placeholder="Sobrenome"
+                value=""
+                required
               />
-              <span id="has-error-email" class="error"></span>
+              <div class="valid-feedback"></div>
             </div>
+          </div>
 
-            <div class="form-group col-12 my-4">
-              <label for="password">*SENHA</label>
+          <div class="form-group row">
+            <label for="inputEmail4" class="col-sm-4 col-form-label"
+              >Email:
+            </label>
+            <div class="form-group col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="example@gmail.com"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-4 col-form-label"
+              >Senha atual:
+            </label>
+            <div class="col-sm-6">
               <input
                 type="password"
-                name="input_pass"
                 class="form-control"
-                id="password"
-                placeholder="*SENHA"
-                maxlength="10"
+                id="inputPassword"
+                placeholder="senha"
               />
-              <span id="has-error-password" class="error"></span>
             </div>
           </div>
 
-          <div class="form-group form-group-submit col-12 text-center my-5">
-            <button type="submit" class="btn btn-primary btn btn-login">
-              Entrar
-            </button>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-4 col-form-label"
+              >Nova senha:
+            </label>
+            <div class="col-sm-6">
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword"
+                placeholder=""
+              />
+            </div>
           </div>
-        </div>
+          <div
+            class="d-flex align-items-center justify-content-end pt-3 form-buttons"
+            id="form-buttons"
+          >
+            <button class="btn btn-primary">Editar dados</button>
+            <button class="btn btn-primary" type="submit">Salvar dados</button>
+          </div>
+        </form>
       </div>
     </main>
 
@@ -153,9 +205,6 @@
             Quer ficar por dentro das novidades do Castelo de Receitas, criar
             foodlists e receber dicas?
           </h3>
-          <a href="/src/register-page.html" class="link-register">
-            <button class="btn sign-in">Cadastre-se</button>
-          </a>
         </div>
         <!-- Left -->
       </section>
