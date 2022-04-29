@@ -1,64 +1,124 @@
 @import '../variables';
 
-header.top-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+@mixin styleBtn {
+  background-color: $dark-blue;
+  border: 1px solid $dark-blue;
+  color: $white-primary;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
-  .send-recipes {
-    a {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-  }
-
-  .search {
-    margin-bottom: 2rem;
-    img {
-      position: relative;
-      left: 1rem;
-      top: 2.6rem;
-    }
-
-    input {
-      padding: 0.8rem 0 0.8rem 5rem;
-    }
-  }
-
-  .sign {
+.login-off {
+  header.top-header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .send-recipes {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
 
-    .sign-up,
-    .sign-in {
+    .search {
+      margin-bottom: 2rem;
+      img {
+        position: relative;
+        left: 1rem;
+        top: 2.6rem;
+      }
+
+      input {
+        padding: 0.8rem 0 0.8rem 5rem;
+      }
+    }
+
+    .sign {
       display: flex;
       align-items: center;
-      justify-content: center;
-      width: 8rem;
-      height: 48px;
-      border-radius: 50px;
-      border: 2px solid $dark-blue;
-      font-size: 14px;
-      font-weight: 700;
-      transition: all 0.3s ease-in-out;
-      position: initial;
-      text-transform: uppercase;
-      text-decoration: none;
+
+      .sign-up,
+      .sign-in {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 48px;
+        border-radius: 50px;
+        border: 2px solid $dark-blue;
+        font-size: 14px;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        position: initial;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .sign-up {
+        color: $dark-blue;
+      }
+      .sign-in {
+        background-color: $dark-blue;
+        color: $white-primary;
+      }
     }
-    .sign-up {
-      color: $dark-blue;
-    }
-    .sign-in {
+
+    .title-main {
+      padding: 2vh 22.5vw;
       background-color: $dark-blue;
       color: $white-primary;
     }
   }
+}
 
-  .title-main {
-    padding: 2vh 22.5vw;
-    background-color: $dark-blue;
-    color: $white-primary;
+.login-on {
+  header.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .send-recipes {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    .search {
+      margin-bottom: 2rem;
+      img {
+        position: relative;
+        left: 1rem;
+        top: 2.6rem;
+      }
+
+      input {
+        padding: 0.8rem 0 0.8rem 5rem;
+      }
+    }
+
+    .section-user {
+      gap: 30px;
+      .btn {
+        @include styleBtn;
+      }
+    }
+
+    .sign {
+      display: none;
+    }
+
+    .title-main {
+      padding: 2vh 22.5vw;
+      background-color: $dark-blue;
+      color: $white-primary;
+    }
   }
 }

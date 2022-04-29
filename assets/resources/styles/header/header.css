@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
-header.top-header {
+.login-off header.top-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +14,7 @@ header.top-header {
       flex-wrap: wrap;
 }
 
-header.top-header .send-recipes a {
+.login-off header.top-header .send-recipes a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,21 +24,21 @@ header.top-header .send-recipes a {
   gap: 10px;
 }
 
-header.top-header .search {
+.login-off header.top-header .search {
   margin-bottom: 2rem;
 }
 
-header.top-header .search img {
+.login-off header.top-header .search img {
   position: relative;
   left: 1rem;
   top: 2.6rem;
 }
 
-header.top-header .search input {
+.login-off header.top-header .search input {
   padding: 0.8rem 0 0.8rem 5rem;
 }
 
-header.top-header .sign {
+.login-off header.top-header .sign {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,8 +47,8 @@ header.top-header .sign {
           align-items: center;
 }
 
-header.top-header .sign .sign-up,
-header.top-header .sign .sign-in {
+.login-off header.top-header .sign .sign-up,
+.login-off header.top-header .sign .sign-in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,16 +71,82 @@ header.top-header .sign .sign-in {
   text-decoration: none;
 }
 
-header.top-header .sign .sign-up {
+.login-off header.top-header .sign .sign-up {
   color: #1fb3e3;
 }
 
-header.top-header .sign .sign-in {
+.login-off header.top-header .sign .sign-in {
   background-color: #1fb3e3;
   color: #fff;
 }
 
-header.top-header .title-main {
+.login-off header.top-header .title-main {
+  padding: 2vh 22.5vw;
+  background-color: #1fb3e3;
+  color: #fff;
+}
+
+.login-on header.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.login-on header.top-header .send-recipes a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.login-on header.top-header .search {
+  margin-bottom: 2rem;
+}
+
+.login-on header.top-header .search img {
+  position: relative;
+  left: 1rem;
+  top: 2.6rem;
+}
+
+.login-on header.top-header .search input {
+  padding: 0.8rem 0 0.8rem 5rem;
+}
+
+.login-on header.top-header .section-user {
+  gap: 30px;
+}
+
+.login-on header.top-header .section-user .btn {
+  background-color: #1fb3e3;
+  border: 1px solid #1fb3e3;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.login-on header.top-header .sign {
+  display: none;
+}
+
+.login-on header.top-header .title-main {
   padding: 2vh 22.5vw;
   background-color: #1fb3e3;
   color: #fff;

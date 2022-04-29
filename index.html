@@ -51,487 +51,496 @@
     <link rel="stylesheet" href="/assets/resources/styles/home/home.css" />
   </head>
   <body>
-    <header class="p-3 bg-light text-black top-header">
-      <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-sm-between"
-        >
-          <a
-            href="/"
-            class="logo d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none"
+    <div class="page-home login-off">
+      <header class="p-3 bg-light text-black top-header ">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-sm-between"
           >
-            <img src="/public/logo.svg" alt="" />
-          </a>
-
-          <div class="send-recipes btn-group">
             <a
-              class="btn text-uppercase border border-primary rounded-pill"
-              href="#"
-              role="button"
+              href="/"
+              class="logo d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none"
             >
-              <img class="" src="/public/kitchen-hat.svg" alt="" />
-              <span>Envie sua receita</span>
+              <img src="/public/logo.svg" alt="" />
+            </a>
+
+            <div class="send-recipes btn-group">
+              <a
+                class="btn text-uppercase border border-primary rounded-pill"
+                href="#"
+                role="button"
+              >
+                <img class="" src="/public/kitchen-hat.svg" alt="" />
+                <span>Envie sua receita</span>
+              </a>
+            </div>
+
+            <form class="search col-12 col-lg-auto">
+              <img src="/public/bloom.jpg" alt="" />
+              <input
+                type="search"
+                class="form-control form-control-dark rounded-pill fs-6"
+                placeholder="Busque uma receita"
+                aria-label="Search"
+              />
+            </form>
+
+            <div class="sign text-end btn-group">
+              <a href="/src/login-page.html" type="button" class="sign-up me-2"
+                >Login</a
+              >
+              <a
+                href="/src/register-page.html"
+                type="button"
+                class="sign-in btn-2"
+                >Cadastre-se</a
+              >
+            </div>
+          </div>
+        </div>
+        <section class="title-main">
+          <h2 class="container">Escolha uma receita da comunidade</h2>
+        </section>
+      </header>
+
+      <main>
+        <div class="container">
+          <header class="p-3 bg-light main-header">
+            <div class="numbers-page">
+              <p class="">
+                <span class="text">Número de Receitas totais: </span>
+                <span class="quantity-revenue">20</span>
+              </p>
+              <p class="">
+                <span class="text">Usuários totais: </span>
+                <span class="quantity-user">10</span>
+              </p>
+            </div>
+            <div class="title">
+              <h2>Novas receitas</h2>
+            </div>
+            <div class="selector">
+              <span class="order">Ordenar por:</span>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>data e hora</option>
+                <option value="1">dificuldade fácil</option>
+                <option value="2">dificuldade média</option>
+                <option value="3">dificuldade difícil</option>
+              </select>
+            </div>
+          </header>
+
+          <div class="swiper list-recipes">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img src="/public/01.jpg" alt="Bombom de Rum" />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Bombom de Rum</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img src="/public/02.jpg" alt="Bolo Piscina" />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Bolo Piscina</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/03.jpg"
+                        alt="Cake Pop Cookies'n Cream"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Cake Pop Cookies'n Cream</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/04.jpg"
+                        alt="Sorvete de Banana e Amêndoas"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Sorvete de Banana e Amêndoas</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="swiper list-recipes">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img src="/public/05.jpg" alt="Arroz Biro-Biro" />
+                    </div>
+                    <div class="text-white previous-recipe">
+                      <h6 class="title-recipe">Arroz Biro-Biro</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/06.jpg"
+                        alt="Arroz de Forno Integral com Carne"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">
+                        Arroz de Forno Integral com Carne
+                      </h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/07.jpg"
+                        alt="Baião de Dois tradicional"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Baião de Dois Tradicional</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <img src="/public/08.jpg" alt="Arroz doce cremoso" />
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Arroz Doce Cremoso</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="swiper list-recipes">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/09.jpg"
+                        alt="Panqueca ao Molho de Sálvia"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Panqueca ao Molho de Sálvia</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/10.jpg"
+                        alt="Lasanha de Panqueca com Brócolis e Molho Branco"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">
+                        Lasanha de Panqueca com Brócolis e Molho Branco
+                      </h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/11.jpg"
+                        alt="Talharim com Molho Branco Light"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">
+                        Talharim com Molho Branco Light
+                      </h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img src="/public/12.jpg" alt="Salada de macarrão" />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Salada de macarrão</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="swiper list-recipes">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/13.jpg"
+                        alt="Sopa de Grão-de-bico com Carne"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">
+                        Sopa de Grão-de-bico com Carne
+                      </h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/14.jpg"
+                        alt="Canja de Galinha Nutritiva"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">Canja de Galinha Nutritiva</h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/15.jpg"
+                        alt="Creme de Nescau e Amendoim com Bananas"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">
+                        Creme de Nescau e Amendoim com Bananas
+                      </h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="recipe-item">
+                  <a href="#">
+                    <div class="image">
+                      <img
+                        src="/public/16.jpg"
+                        alt="Ovo de Colher de Bolo de Cenoura com Brigadeiro Gourmet"
+                      />
+                    </div>
+                    <div class="container text-white previous-recipe">
+                      <h6 class="title-recipe">
+                        Creme de Nescau e Amendoim com Bananas
+                      </h6>
+                      <div class="level-recipe" id="level-recipe">
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <div class="squere"></div>
+                        <span class="level" id="leuvel">Fácil</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only"></span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </main>
+
+      <footer class="text-center">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center p-4 border-bottom newsletter-container"
+        >
+          <!-- Left -->
+          <div class="text-center newsletter-content">
+            <h3>
+              Quer ficar por dentro das novidades do Castelo de Receitas, criar
+              foodlists e receber dicas?
+            </h3>
+            <a href="/src/register-page.html" class="link-register">
+              <button class="btn sign-in">Cadastre-se</button>
             </a>
           </div>
+          <!-- Left -->
+        </section>
+        <!-- Section: Social media -->
 
-          <form class="search col-12 col-lg-auto">
-            <img src="/public/bloom.jpg" alt="" />
-            <input
-              type="search"
-              class="form-control form-control-dark rounded-pill fs-6"
-              placeholder="Busque uma receita"
-              aria-label="Search"
-            />
-          </form>
-
-          <div class="sign text-end btn-group">
-            <a href="/src/login-page.html" type="button" class="sign-up me-2"
-              >Login</a
-            >
-            <a
-              href="/src/register-page.html"
-              type="button"
-              class="sign-in btn-2"
-              >Cadastre-se</a
+        <!-- Copyright -->
+        <div class="copywriter text-lg-center p-4">
+          <div class="container text-white">
+            ©2019, Castelo de receitas Brasil Ltda.
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+              >Todos os direitos reservados. Política de Privacidade</a
             >
           </div>
         </div>
-      </div>
-      <section class="title-main">
-        <h2 class="container">Escolha uma receita da comunidade</h2>
-      </section>
-    </header>
-
-    <main>
-      <div class="container">
-        <header class="p-3 bg-light main-header">
-          <div class="numbers-page">
-            <p class="">
-              <span class="text">Número de Receitas totais: </span>
-              <span class="quantity-revenue">20</span>
-            </p>
-            <p class="">
-              <span class="text">Usuários totais: </span>
-              <span class="quantity-user">10</span>
-            </p>
-          </div>
-          <div class="title">
-            <h2>Novas receitas</h2>
-          </div>
-          <div class="selector">
-            <span class="order">Ordenar por:</span>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>data e hora</option>
-              <option value="1">dificuldade fácil</option>
-              <option value="2">dificuldade média</option>
-              <option value="3">dificuldade difícil</option>
-            </select>
-          </div>
-        </header>
-
-        <div class="swiper list-recipes">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img src="/public/01.jpg" alt="Bombom de Rum" />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Bombom de Rum</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img src="/public/02.jpg" alt="Bolo Piscina" />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Bolo Piscina</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img src="/public/03.jpg" alt="Cake Pop Cookies'n Cream" />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Cake Pop Cookies'n Cream</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/04.jpg"
-                      alt="Sorvete de Banana e Amêndoas"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Sorvete de Banana e Amêndoas</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="swiper list-recipes">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img src="/public/05.jpg" alt="Arroz Biro-Biro" />
-                  </div>
-                  <div class="text-white previous-recipe">
-                    <h6 class="title-recipe">Arroz Biro-Biro</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/06.jpg"
-                      alt="Arroz de Forno Integral com Carne"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">
-                      Arroz de Forno Integral com Carne
-                    </h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img src="/public/07.jpg" alt="Baião de Dois tradicional" />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Baião de Dois Tradicional</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <img src="/public/08.jpg" alt="Arroz doce cremoso" />
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Arroz Doce Cremoso</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="swiper list-recipes">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/09.jpg"
-                      alt="Panqueca ao Molho de Sálvia"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Panqueca ao Molho de Sálvia</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/10.jpg"
-                      alt="Lasanha de Panqueca com Brócolis e Molho Branco"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">
-                      Lasanha de Panqueca com Brócolis e Molho Branco
-                    </h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/11.jpg"
-                      alt="Talharim com Molho Branco Light"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">
-                      Talharim com Molho Branco Light
-                    </h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img src="/public/12.jpg" alt="Salada de macarrão" />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Salada de macarrão</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="swiper list-recipes">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/13.jpg"
-                      alt="Sopa de Grão-de-bico com Carne"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Sopa de Grão-de-bico com Carne</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/14.jpg"
-                      alt="Canja de Galinha Nutritiva"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">Canja de Galinha Nutritiva</h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/15.jpg"
-                      alt="Creme de Nescau e Amendoim com Bananas"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">
-                      Creme de Nescau e Amendoim com Bananas
-                    </h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="recipe-item">
-                <a href="#">
-                  <div class="image">
-                    <img
-                      src="/public/16.jpg"
-                      alt="Ovo de Colher de Bolo de Cenoura com Brigadeiro Gourmet"
-                    />
-                  </div>
-                  <div class="container text-white previous-recipe">
-                    <h6 class="title-recipe">
-                      Creme de Nescau e Amendoim com Bananas
-                    </h6>
-                    <div class="level-recipe" id="level-recipe">
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <div class="squere"></div>
-                      <span class="level" id="leuvel">Fácil</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <nav aria-label="Page navigation example">
-          <ul class="pagination d-flex justify-content-center">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only"></span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </main>
-
-    <footer class="text-center">
-      <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-center p-4 border-bottom newsletter-container"
-      >
-        <!-- Left -->
-        <div class="text-center newsletter-content">
-          <h3>
-            Quer ficar por dentro das novidades do Castelo de Receitas, criar
-            foodlists e receber dicas?
-          </h3>
-          <a href="/src/register-page.html" class="link-register">
-            <button class="btn sign-in">Cadastre-se</button>
-          </a>
-        </div>
-        <!-- Left -->
-      </section>
-      <!-- Section: Social media -->
-
-      <!-- Copyright -->
-      <div class="copywriter text-lg-center p-4">
-        <div class="container text-white">
-          ©2019, Castelo de receitas Brasil Ltda.
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-            >Todos os direitos reservados. Política de Privacidade</a
-          >
-        </div>
-      </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+        <!-- Copyright -->
+      </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
