@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACE,IADE,CACF,IAAI,CAAC;EACH,MAAM,EAAE,cAAc;CAKvB;;AAPH,AAII,IAJA,CACF,IAAI,CAGF,aAAa,CAAA;EACX,GAAG,EAAE,IAAI;CACV",
-    "sources": [
-        "data-user.scss"
-    ],
-    "names": [],
-    "file": "data-user.css"
-}

@@ -1,3 +1,5 @@
+@import '../variables';
+
 footer {
   background-color: #cef0f9 !important;
   .newsletter-container {
@@ -6,19 +8,19 @@ footer {
       align-items: center;
       flex-direction: column;
       gap: 10px;
-     
+
       h3 {
         font-size: 18px;
       }
 
       .sign-in {
-        font-family: 'Cookie', cursive;
+        font-family: $font-Cookie;
         font-size: 24px;
         width: 14rem;
         height: 48px;
         border-radius: 30px;
-        color: #fff;
-        background-color: #1fb3e3;
+        color: $white-primary;
+        background-color: $dark-blue;
         font-weight: 700;
         transition: all 0.3s ease-in-out;
         position: initial;
@@ -29,6 +31,6 @@ footer {
   }
 
   .copywriter {
-    background-color: #1fb3e3;
+    background-color: $dark-blue;
   }
 }

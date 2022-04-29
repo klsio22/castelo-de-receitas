@@ -1,9 +1,10 @@
+@import '../variables';
+
 header.top-header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 
   .send-recipes {
     a {
@@ -38,7 +39,7 @@ header.top-header {
       width: 8rem;
       height: 48px;
       border-radius: 50px;
-      border: 2px solid #1fb3e3;
+      border: 2px solid $dark-blue;
       font-size: 14px;
       font-weight: 700;
       transition: all 0.3s ease-in-out;
@@ -47,17 +48,17 @@ header.top-header {
       text-decoration: none;
     }
     .sign-up {
-      color: #1fb3e3;
+      color: $dark-blue;
     }
     .sign-in {
-      background-color: #1fb3e3;
-      color: #fff;
+      background-color: $dark-blue;
+      color: $white-primary;
     }
   }
 
-  .title-main{
+  .title-main {
     padding: 2vh 22.5vw;
-    background-color: #1fb3e3;
-    color: #fff;
+    background-color: $dark-blue;
+    color: $white-primary;
   }
 }

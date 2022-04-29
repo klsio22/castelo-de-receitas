@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+.page-user-data main form {
+  border: 1px solid #000;
+}
+
+.page-user-data main form .form-group label {
+  color: #1fb3e3;
+  width: 7rem;
+}
+
+.page-user-data main form .form-buttons {
+  gap: 20px;
+}
+
+.page-user-data main form .btn {
+  background-color: #1fb3e3;
+  border: 1px solid #1fb3e3;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-user-data .back-home .btn {
+  background-color: #1fb3e3;
+  border: 1px solid #1fb3e3;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*# sourceMappingURL=user-data.css.map */

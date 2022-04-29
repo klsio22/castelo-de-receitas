@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon site -->
+    <link rel="icon" href="/public/favicon.ico" />
+
+    <title>Castelo de Receitas</title>
+
+    <!-- fontes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- reset -->
+
+    <link rel="stylesheet" href="/assets/resources/styles/reset.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/main.css" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- CSS created -->
+    <link rel="stylesheet" href="/assets/resources/styles/header/header.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/resources/styles/data-user/user-data.css"
+    />
+  </head>
+  <body>
+    <div class="page-user-data">
+      <header class="p-3 bg-light text-black top-header">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-sm-between"
+          >
+            <a
+              href="/"
+              class="logo d-flex align-items-center mb-2 mb-lg-0 text-black text-decoration-none"
+            >
+              <img src="/public/logo.svg" alt="" />
+            </a>
+
+            <div class="send-recipes btn-group">
+              <a
+                class="btn text-uppercase border border-primary rounded-pill"
+                href="#"
+                role="button"
+              >
+                <img class="" src="/public/kitchen-hat.svg" alt="" />
+                <span>Envie sua receita</span>
+              </a>
+            </div>
+
+            <form class="search col-12 col-lg-auto">
+              <img src="/public/bloom.jpg" alt="" />
+              <input
+                type="search"
+                class="form-control form-control-dark rounded-pill fs-6"
+                placeholder="Busque uma receita"
+                aria-label="Search"
+              />
+            </form>
+
+            <div class="sign text-end btn-group">
+              <a href="/src/login-page.html" type="button" class="sign-up me-2"
+                >Login</a
+              >
+              <a
+                href="/src/register-page.html"
+                type="button"
+                class="sign-in btn-2"
+                >Cadastre-se</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="my-5">
+        <div
+          class="container d-flex justify-content-center align-content-between"
+        >
+          <form class="form-inline p-3 my-4 col-6">
+            <div class="form-group row">
+              <div class="d-flex justify-content-between col-md-6 mb-3">
+                <label for="validationServer01" class="col-sm-2 col-form-label"
+                  >Nome:
+                </label>
+                <div class="col-sm-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer01"
+                    placeholder="Primeiro nome"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <div class="valid-feedback"></div>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="d-flex justify-content-between col-md-4 mb-3">
+                <label for="validationServer02" class="col-sm-2 col-form-label"
+                  >Sobrenome:
+                </label>
+                <div class="col-md-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationServer02"
+                    placeholder="Sobrenome"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="valid-feedback"></div>
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="inputEmail4" class="col-sm-2 col-form-label"
+                >Email:
+              </label>
+              <div class="form-group col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail4"
+                  placeholder="example@gmail.com"
+                  value=""
+                />
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="inputPassword" class="col-sm-2 col-form-label"
+                >Senha atual:
+              </label>
+              <div class="col-sm-6">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Senha atual"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-2 col-form-label"
+                >Nova senha:
+              </label>
+              <div class="col-sm-6">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Nova senha"
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center justify-content-end pt-5 form-buttons"
+              id="form-buttons"
+            >
+              <button class="btn btn-primary">Editar dados</button>
+              <button class="btn btn-primary" type="submit">
+                Salvar dados
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <section class="back-home mb-4">
+        <div class="text-center">
+          <a href="/">
+            <img src="/public/previus.svg" alt="" width="30" height="30" />
+            <button class="btn btn-primary">
+              Voltar para pagina principal
+            </button>
+          </a>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="text-center">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center p-4 border-bottom newsletter-container"
+        >
+          <!-- Left -->
+          <div class="text-center newsletter-content">
+            <h3>
+              Quer ficar por dentro das novidades do Castelo de Receitas, criar
+              foodlists e receber dicas?
+            </h3>
+          </div>
+          <!-- Left -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Copyright -->
+        <div class="copywriter text-lg-center p-4">
+          <div class="container text-white">
+            ©2019, Castelo de receitas Brasil Ltda.
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+              >Todos os direitos reservados. Política de Privacidade</a
+            >
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/libraries/swipe-library.js"></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
 footer {
   background-color: #cef0f9 !important;
 }
@@ -21,7 +23,7 @@ footer .newsletter-container .newsletter-content h3 {
 }
 
 footer .newsletter-container .newsletter-content .sign-in {
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
   font-size: 24px;
   width: 14rem;
   height: 48px;
