@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+.page-registed-recipes main .add-recipes {
+  color: #174459;
+}
+
+.page-registed-recipes main .list-recipes {
+  gap: 40px;
+}
+
+.page-registed-recipes main .list-recipes table thead tr th {
+  font-size: 24px;
+}
+
+.page-registed-recipes main .list-recipes table tbody tr td {
+  font-size: 2.4rem;
+}
+
+.page-registed-recipes main .list-recipes table tbody tr td:first-child {
+  color: #1fb3e3;
+  width: 30%;
+}
+
+.page-registed-recipes .back-home .btn {
+  background-color: #1fb3e3;
+  border: 1px solid #1fb3e3;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-decoration: none;
+}
+/*# sourceMappingURL=registered-recipes.css.map */

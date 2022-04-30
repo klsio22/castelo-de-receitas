@@ -1,0 +1,46 @@
+@import '../variables';
+
+@mixin styleBtn {
+  height: 7rem;
+  width: 15rem;
+  background-color: $dark-blue;
+  border: 1px solid $dark-blue;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-register-recipe {
+  main {
+    form {
+      .form-group {
+        label {
+          color: $dark-blue;
+          font-size: 1.3rem;
+          width: 12rem;
+        }
+
+        input,
+        textarea {
+          border: 1px solid $dark-blue;
+        }
+      }
+
+      .select-level {
+        h5 {
+          width: 40rem;
+        }
+      }
+
+      .form-buttons {
+        .btn {
+          @include styleBtn;
+        }
+      }
+    }
+  }
+}

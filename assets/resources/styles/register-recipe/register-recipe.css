@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+.page-register-recipe main form .form-group label {
+  color: #1fb3e3;
+  font-size: 1.3rem;
+  width: 12rem;
+}
+
+.page-register-recipe main form .form-group input,
+.page-register-recipe main form .form-group textarea {
+  border: 1px solid #1fb3e3;
+}
+
+.page-register-recipe main form .select-level h5 {
+  width: 40rem;
+}
+
+.page-register-recipe main form .form-buttons .btn {
+  height: 7rem;
+  width: 15rem;
+  background-color: #1fb3e3;
+  border: 1px solid #1fb3e3;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*# sourceMappingURL=register-recipe.css.map */

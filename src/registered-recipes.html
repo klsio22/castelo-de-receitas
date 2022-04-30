@@ -18,18 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- reset -->
 
-    <link rel="stylesheet" href="/assets/resources/styles/main.css" />
     <link rel="stylesheet" href="/assets/resources/styles/reset.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/main.css" />
 
     <!-- bootstrap -->
     <link
@@ -50,11 +50,11 @@
     <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
     <link
       rel="stylesheet"
-      href="/assets/resources/styles/register/register.css"
+      href="/assets/resources/styles/Registered-recipes/registered-recipes.css"
     />
   </head>
   <body>
-    <div class="page-register login-off">
+    <div class="page-registed-recipes login-on">
       <header class="p-3 bg-light text-black top-header">
         <div class="container">
           <div
@@ -117,86 +117,96 @@
             </div>
           </div>
         </div>
+        <section class="container text-center title-main">
+          <h2 class="">Receitas cadastradas</h2>
+        </section>
       </header>
 
-      <main>
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center flex-column mt-lg-5">
-            <div class="form-row">
-              <div class="form-group col-12 my-3">
-                <label for="email"
-                  >*E-MAIL
-                  <span class="info">(Seu email será seu login)</span></label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  name="user_email"
-                  id="email"
-                  placeholder="*E-MAIL"
-                  value=""
-                />
-                <span id="has-error-email" class="error"></span>
-              </div>
+      <main class="my-5">
+        <section class="mb-5">
+          <div class="container col-sm-9 fw-bold add-recipes">
+            <a href="/src/register-recipe.html">
+              <h4>Adicionar mais receitas +</h4>
+            </a>
+          </div>
+        </section>
 
-              <div
-                class="d-flex flex-wrap align-items-center col-12 justify-content-between"
-              >
-                <div class="form-group col-md-5 col-12">
-                  <label for="name">*NOME</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="user_name"
-                    id="name"
-                    placeholder="*NOME"
-                    value=""
-                  />
-                  <span id="has-error-name" class="error"></span>
-                </div>
+        <div
+          class="container d-flex justify-content-center flex-column align-items-center list-recipes"
+        >
+          <div class="d-flex col-sm-10 fw-bold text-center">
+            <img src="/public/01.jpg" alt="Bombom de Rum" width="130" />
+            <table class="table table-borderless">
+              <thead class="">
+                <tr class="">
+                  <th scope="col"><h3>Nome</h3></th>
+                  <th scope="col"><h3>Data</h3></th>
+                  <th scope="col"><h3>Remover</h3></th>
+                  <th scope="col"><h3>Editar</h3></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <h4>Bombom de Rum</h4>
+                  </td>
+                  <td>
+                    <h4>18/03/2022</h4>
+                  </td>
+                  <td>
+                    <img src="/public/trash.svg" alt="Icon Trash" width="30" />
+                  </td>
+                  <td>
+                    <img src="/public/edit.svg" alt="Icon edit" width="30" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                <div class="form-group col-md-6 col-12">
-                  <label for="lastname">*SOBRENOME</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="user_lastname"
-                    id="lastname"
-                    placeholder="*SOBRENOME"
-                    value=""
-                  />
-                  <span id="has-error-lastname" class="error"></span>
-                </div>
-              </div>
-
-              <div class="form-group col-md-12 col-12 my-3">
-                <label for="password">*CRIE UMA SENHA</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  name="user_password"
-                  id="password"
-                  placeholder="*CRIE UMA SENHA"
-                  maxlength="10"
-                />
-                <span id="has-error-pass" class="error"></span>
-                <input type="hidden" name="user_id_social" id="id_social" />
-              </div>
-
-              <div class="form-group form-group-submit col-12 text-center my-5">
-                <button
-                  class="btn btn-primary btn btn-register"
-                  type="submit"
-                  aria-label="Avançar complemento cadastro"
-                >
-                  Cadastrar
-                </button>
-              </div>
-            </div>
+          <div class="d-flex col-sm-10 fw-bold text-center">
+            <img src="/public/02.jpg" alt="Bolo Piscina" width="130" />
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col"><h3>Nome</h3></th>
+                  <th scope="col"><h3>Data</h3></th>
+                  <th scope="col"><h3>Remover</h3></th>
+                  <th scope="col"><h3>Editar</h3></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <h4>Bolo Piscina</h4>
+                  </td>
+                  <td>
+                    <h4>14/04/2022</h4>
+                  </td>
+                  <td>
+                    <img src="/public/trash.svg" alt="Icon Trash" width="30" />
+                  </td>
+                  <td>
+                    <img src="/public/edit.svg" alt="Icon edit" width="30" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </main>
 
+      <section class="back-home mb-4">
+        <div class="text-center">
+          <a href="/">
+            <img src="/public/previus.svg" alt="" width="30" height="30" />
+            <button class="btn btn-primary">
+              Voltar para página principal
+            </button>
+          </a>
+        </div>
+      </section>
+      <!-- Footer -->
       <footer class="text-center">
         <!-- Section: Social media -->
         <section

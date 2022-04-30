@@ -80,6 +80,10 @@
   color: #fff;
 }
 
+.login-off header.top-header .section-user {
+  display: none;
+}
+
 .login-off header.top-header .title-main {
   padding: 2vh 22.5vw;
   background-color: #1fb3e3;

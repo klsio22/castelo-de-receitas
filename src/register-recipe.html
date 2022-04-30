@@ -18,18 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- reset -->
 
-    <link rel="stylesheet" href="/assets/resources/styles/main.css" />
     <link rel="stylesheet" href="/assets/resources/styles/reset.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/main.css" />
 
     <!-- bootstrap -->
     <link
@@ -50,11 +50,11 @@
     <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
     <link
       rel="stylesheet"
-      href="/assets/resources/styles/register/register.css"
+      href="/assets/resources/styles/register-recipe/register-recipe.css"
     />
   </head>
   <body>
-    <div class="page-register login-off">
+    <div class="page-register-recipe login-on">
       <header class="p-3 bg-light text-black top-header">
         <div class="container">
           <div
@@ -97,7 +97,7 @@
                 <option value="1">sair</option>
               </select>
               <a
-                href="/src/register-page.html"
+                href="/src/registered-recipes.html"
                 type="button"
                 class="btn col-sm-12"
                 >Ver minhas receitas</a
@@ -117,86 +117,119 @@
             </div>
           </div>
         </div>
+        <section class="container text-center title-main">
+          <h2 class="">Cadastre sua receita</h2>
+        </section>
       </header>
 
-      <main>
-        <div class="container">
-          <div class="d-flex flex-wrap align-items-center flex-column mt-lg-5">
-            <div class="form-row">
-              <div class="form-group col-12 my-3">
-                <label for="email"
-                  >*E-MAIL
-                  <span class="info">(Seu email será seu login)</span></label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  name="user_email"
-                  id="email"
-                  placeholder="*E-MAIL"
-                  value=""
-                />
-                <span id="has-error-email" class="error"></span>
-              </div>
-
+      <main class="my-5">
+        <div
+          class="container d-flex justify-content-center align-content-between"
+        >
+          <form class="form-inline p-3 my-4 col-6">
+            <div class="form-group row">
               <div
-                class="d-flex flex-wrap align-items-center col-12 justify-content-between"
+                class="d-flex justify-content-between align-items-center col-md-6 mb-3"
               >
-                <div class="form-group col-md-5 col-12">
-                  <label for="name">*NOME</label>
+                <label for="fistNameRecipe" class="col-sm-2 col-form-label"
+                  >Nome da receita:
+                </label>
+                <div class="col-sm-auto">
                   <input
                     type="text"
                     class="form-control"
-                    name="user_name"
-                    id="name"
-                    placeholder="*NOME"
+                    id="fistNameRecipe"
+                    placeholder="Nome da receita"
                     value=""
+                    required
                   />
-                  <span id="has-error-name" class="error"></span>
                 </div>
 
-                <div class="form-group col-md-6 col-12">
-                  <label for="lastname">*SOBRENOME</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="user_lastname"
-                    id="lastname"
-                    placeholder="*SOBRENOME"
-                    value=""
-                  />
-                  <span id="has-error-lastname" class="error"></span>
-                </div>
-              </div>
-
-              <div class="form-group col-md-12 col-12 my-3">
-                <label for="password">*CRIE UMA SENHA</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  name="user_password"
-                  id="password"
-                  placeholder="*CRIE UMA SENHA"
-                  maxlength="10"
-                />
-                <span id="has-error-pass" class="error"></span>
-                <input type="hidden" name="user_id_social" id="id_social" />
-              </div>
-
-              <div class="form-group form-group-submit col-12 text-center my-5">
-                <button
-                  class="btn btn-primary btn btn-register"
-                  type="submit"
-                  aria-label="Avançar complemento cadastro"
-                >
-                  Cadastrar
-                </button>
+                <div class="valid-feedback"></div>
               </div>
             </div>
-          </div>
+
+            <div class="form-group row">
+              <div
+                class="d-flex justify-content-between align-items-center col-md-4 mb-3"
+              >
+                <label for="lastnameRecipe" class="col-sm-2 col-form-label"
+                  >Sobrenome:
+                </label>
+                <div class="col-md-auto">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastnameRecipe"
+                    placeholder="Sobrenome"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="valid-feedback"></div>
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="ingredients" class="col-sm-2 col-form-label"
+                >Ingredientes:
+              </label>
+              <div class="form-group col-md-6">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="ingredients"
+                  placeholder=""
+                  rows="5"
+                  cols="33"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row mb-3">
+              <label for="preparation" class="col-sm-2 col-form-label"
+                >Modo de Preparo:
+              </label>
+              <div class="form-group col-md-6">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="preparation"
+                  placeholder=""
+                  rows="5"
+                  cols="33"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center select-level my-5">
+              <h5 class="">Nivel de dificuldade de receita:</h5>
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+                <option value="1">Fácil</option>
+                <option value="2">Médio</option>
+                <option value="3">Difícil</option>
+              </select>
+            </div>
+
+            <div class="mb-3 source-file">
+              <label for="formFile" class="form-label"></label>
+              <input class="form-control" type="file" id="formFile" />
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-center pt-5 form-buttons"
+              id="form-buttons"
+            >
+              <button type="submit" class="btn btn-primary save-recipe">
+                Salvar Receita
+              </button>
+            </div>
+          </form>
         </div>
       </main>
 
+      <!-- Footer -->
       <footer class="text-center">
         <!-- Section: Social media -->
         <section

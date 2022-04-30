@@ -55,7 +55,7 @@
   </head>
   <body>
     <div class="page-user-data login-on">
-      <header class="p-3 bg-light text-black top-header ">
+      <header class="p-3 bg-light text-black top-header">
         <div class="container">
           <div
             class="d-flex flex-wrap align-items-center justify-content-sm-between"
@@ -88,7 +88,7 @@
               />
             </form>
 
-            <div class="d-flex text-end btn-group section-user">
+            <div class="text-end btn-group section-user">
               <select
                 class="form-select form-select-lg"
                 aria-label=".form-select-sm example"
@@ -96,7 +96,10 @@
                 <option selected>Minha conta</option>
                 <option value="1">sair</option>
               </select>
-              <a href="/src/register-page.html" type="button" class="btn col-sm-12"
+              <a
+                href="/src/registered-recipes.html"
+                type="button"
+                class="btn col-sm-12"
                 >Ver minhas receitas</a
               >
             </div>
@@ -114,6 +117,9 @@
             </div>
           </div>
         </div>
+        <section class="container text-center title-main">
+          <h2 class="">Dados Pessoais</h2>
+        </section>
       </header>
 
       <main class="my-5">
@@ -183,7 +189,7 @@
                 <input
                   type="password"
                   class="form-control"
-                  id="inputPassword"
+                  id="inputOldPassword"
                   placeholder="Senha atual"
                 />
               </div>
@@ -197,7 +203,7 @@
                 <input
                   type="password"
                   class="form-control"
-                  id="inputPassword"
+                  id="inputNewPassword"
                   placeholder="Nova senha"
                 />
               </div>
@@ -220,7 +226,7 @@
           <a href="/">
             <img src="/public/previus.svg" alt="" width="30" height="30" />
             <button class="btn btn-primary">
-              Voltar para pagina principal
+              Voltar para página principal
             </button>
           </a>
         </div>

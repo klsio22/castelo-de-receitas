@@ -52,7 +52,7 @@
   </head>
   <body>
     <div class="page-login login-off">
-      <header class="p-3 bg-light text-black top-header ">
+      <header class="p-3 bg-light text-black top-header">
         <div class="container">
           <div
             class="d-flex flex-wrap align-items-center justify-content-sm-between"
@@ -63,7 +63,7 @@
             >
               <img src="/public/logo.svg" alt="" />
             </a>
-  
+
             <div class="send-recipes btn-group">
               <a
                 class="btn text-uppercase border border-primary rounded-pill"
@@ -74,7 +74,7 @@
                 <span>Envie sua receita</span>
               </a>
             </div>
-  
+
             <form class="search col-12 col-lg-auto">
               <img src="/public/bloom.jpg" alt="" />
               <input
@@ -84,7 +84,23 @@
                 aria-label="Search"
               />
             </form>
-  
+
+            <div class="text-end btn-group section-user">
+              <select
+                class="form-select form-select-lg"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Minha conta</option>
+                <option value="1">sair</option>
+              </select>
+              <a
+                href="/src/register-page.html"
+                type="button"
+                class="btn col-sm-12"
+                >Ver minhas receitas</a
+              >
+            </div>
+
             <div class="sign text-end btn-group">
               <a href="/src/login-page.html" type="button" class="sign-up me-2"
                 >Login</a
@@ -99,14 +115,14 @@
           </div>
         </div>
       </header>
-  
+
       <main>
         <div class="container my-5">
           <div
             class="d-flex flex-wrap align-items-center flex-column already-account__form login"
           >
             <h3>Entre com seu e-mail e senha:</h3>
-  
+
             <div class="form-row">
               <div class="form-group col-12 my-4">
                 <label for="email">*E-MAIL </label>
@@ -119,7 +135,7 @@
                 />
                 <span id="has-error-email" class="error"></span>
               </div>
-  
+
               <div class="form-group col-12 my-4">
                 <label for="password">*SENHA</label>
                 <input
@@ -133,7 +149,7 @@
                 <span id="has-error-password" class="error"></span>
               </div>
             </div>
-  
+
             <div class="form-group form-group-submit col-12 text-center my-5">
               <a href="/src/user-data.html">
                 <button type="submit" class="btn btn-primary btn btn-login">
@@ -144,7 +160,7 @@
           </div>
         </div>
       </main>
-  
+
       <footer class="text-center">
         <!-- Section: Social media -->
         <section
@@ -163,7 +179,7 @@
           <!-- Left -->
         </section>
         <!-- Section: Social media -->
-  
+
         <!-- Copyright -->
         <div class="copywriter text-lg-center p-4">
           <div class="container text-white">
@@ -176,8 +192,6 @@
         <!-- Copyright -->
       </footer>
     </div>
-    
-    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

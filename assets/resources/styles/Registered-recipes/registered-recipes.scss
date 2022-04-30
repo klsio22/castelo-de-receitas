@@ -1,0 +1,52 @@
+@import '../variables';
+
+@mixin styleBtn {
+  background-color: $dark-blue;
+  border: 1px solid $dark-blue;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-decoration: none;
+}
+
+.page-registed-recipes {
+  main {
+    .add-recipes {
+      color: $darker-blue;
+    }
+
+    .list-recipes {
+      gap: 40px;
+      table {
+        thead {
+          tr {
+            th {
+              font-size: 24px;
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              font-size: 2.4rem;
+            }
+
+            td:first-child {
+              color: $dark-blue;
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .back-home {
+    .btn {
+      @include styleBtn;
+    }
+  }
+}
