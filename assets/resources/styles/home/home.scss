@@ -1,4 +1,3 @@
-
 @import '../variables';
 
 main {
@@ -41,7 +40,7 @@ main {
 
     .swiper-slide {
       font-size: 18px;
-      background: $white;
+      background: $white-primary;
 
       /* Center slide text vertically */
       display: flex;
@@ -51,10 +50,6 @@ main {
       margin-bottom: 4rem;
       height: auto;
 
-      a {
-        text-decoration: none;
-      }
-
       img {
         display: block;
         width: 100%;
@@ -62,38 +57,60 @@ main {
         object-fit: cover;
       }
 
-      .recipe-item{
+      .recipe-item {
         width: 100%;
-      }
-      
-      .previous-recipe {
-        background-color: $ligth-blue !important;
-        width: 100%;
-        //height: 100%;
-        padding: 1.25rem 0.75rem;
 
-        .title-recipe {
-          width: 16rem;
-          height: 3rem;
+        a {
+          text-decoration: none;
+
+          .previous-recipe {
+            background-color: $ligth-blue !important;
+            width: 100%;
+            //height: 100%;
+            padding: 1.25rem 0.75rem;
+
+            .title-recipe {
+              width: 16rem;
+              height: 3rem;
+            }
+
+            .level-recipe {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 70%;
+              margin-top: 1rem;
+
+              .squere {
+                width: 20px;
+                height: 20px;
+                background-color: rgba(255, 255, 255, 0);
+                border-radius: 0;
+                border: 1px solid $dark-blue;
+              }
+
+              .squere:first-child {
+                background-color: $dark-blue;
+              }
+            }
+          }
         }
 
-        .level-recipe {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 70%;
-          margin-top: 1rem;
-
-          .squere {
-            width: 20px;
-            height: 20px;
-            background-color: rgba(255, 255, 255, 0);
-            border-radius: 0;
-            border: 1px solid $dark-blue;
+        a:hover {
+          img {
+            opacity: 0.6;
           }
 
-          .squere:first-child {
-            background-color: $dark-blue;
+          .previous-recipe {
+            background-color: $dark-blue !important;
+
+            .squere {
+              border: 1px solid $white-primary;
+            }
+
+            .squere:first-child {
+              background-color: $white-primary;
+            }
           }
         }
       }
