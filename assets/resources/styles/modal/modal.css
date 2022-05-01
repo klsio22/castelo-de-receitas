@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal .modal-content {
+  background-color: #7acaf0;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 70%;
+}
+
+.modal .modal-content .close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal .modal-content .close:hover,
+.modal .modal-content .close:focus {
+  color: #174459;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal .modal-content .title-modal {
+  font-family: "Cookie", cursive;
+  font-size: 28px;
+}
+
+.modal .modal-content .title-modal p {
+  width: 25rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.modal .modal-content .sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.modal .modal-content .sign .sign-up,
+.modal .modal-content .sign .sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 8rem;
+  height: 48px;
+  border-radius: 50px;
+  border: 2px solid #1fb3e3;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.modal .modal-content .sign .sign-up {
+  color: #000;
+  background-color: white;
+}
+
+.modal .modal-content .sign .sign-in {
+  background-color: #1fb3e3;
+  color: #fff;
+  width: 12rem;
+}
+/*# sourceMappingURL=modal.css.map */

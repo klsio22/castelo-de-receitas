@@ -1,0 +1,81 @@
+@import '../variables';
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+  .modal-content {
+    background-color: $ligth-blue;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 70%;
+
+    .close {
+      color: $white-primary;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: $darker-blue;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .title-modal{
+      font-family: $font-Cookie;
+      font-size: 28px;  
+      p{
+        width: 25rem;
+        background-color: $white-primary;
+        padding: 1rem;
+      }
+    }
+
+    .sign {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      .sign-up,
+      .sign-in {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 48px;
+        border-radius: 50px;
+        border: 2px solid $dark-blue;
+        font-size: 14px;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        position: initial;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .sign-up {
+        color: $black;
+        background-color: white;
+      }
+      .sign-in {
+        background-color: $dark-blue;
+        color: $white-primary;
+        width: 12rem;
+      }
+    }
+  }
+}
