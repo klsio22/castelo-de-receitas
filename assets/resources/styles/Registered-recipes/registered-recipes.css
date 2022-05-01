@@ -21,6 +21,10 @@
   width: 30%;
 }
 
+.page-registed-recipes main .list-recipes table tbody tr td:nth-child(3), .page-registed-recipes main .list-recipes table tbody tr td:nth-child(4) {
+  cursor: pointer;
+}
+
 .page-registed-recipes .back-home .btn {
   background-color: #1fb3e3;
   border: 1px solid #1fb3e3;

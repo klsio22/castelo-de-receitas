@@ -70,7 +70,7 @@
     }
 
     .section-user {
-      display: none ;
+      display: none;
     }
 
     .title-main {
@@ -110,7 +110,47 @@
 
     .section-user {
       gap: 30px;
+
+      .list-option {
+        img {
+          width: 3rem;
+          cursor: pointer;
+        }
+
+        a {
+          text-decoration: none;
+          color: $white-primary;
+        }
+
+        .list-user-section {
+          position: absolute;
+          display: none;
+        }
+      }
+
+      .list-option:hover {
+        .list-user-section {
+          position: absolute;
+          width: 11rem;
+          top: 41px;
+          left: -60px;
+          background-color: $ligth-blue;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-size: 20px;
+          border-radius: 20px;
+          ul {
+            li > a:hover {
+              color: $darker-blue;
+            }
+          }
+        }
+      }
+
       .btn {
+        display: flex;
+        align-items: center;
         @include styleBtn;
       }
     }

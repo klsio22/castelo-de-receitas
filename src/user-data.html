@@ -88,14 +88,20 @@
               />
             </form>
 
-            <div class="text-end btn-group section-user">
-              <select
-                class="form-select form-select-lg"
-                aria-label=".form-select-sm example"
-              >
-                <option selected>Minha conta</option>
-                <option value="1">sair</option>
-              </select>
+            <div class="text-end btn-group section-user" id="section-user">
+              
+              <div class="list-option">
+                <img src="/public/user.svg" alt="">
+                <div  class="list-user-section" >
+                  <ul>
+                    <li class="option">
+                      <a href="/src/user-data.html">Minha conta</a>
+                    </li class="option">
+                    <li><a href="/">Sair</a></li>
+                  </ul>
+                </div>
+              </div>
+              
               <a
                 href="/src/registered-recipes.html"
                 type="button"

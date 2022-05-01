@@ -52,6 +52,7 @@
       rel="stylesheet"
       href="/assets/resources/styles/Registered-recipes/registered-recipes.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <div class="page-registed-recipes login-on">
@@ -88,19 +89,24 @@
               />
             </form>
 
-            <div class="text-end btn-group section-user">
-              <select
-                class="form-select form-select-lg"
-                aria-label=".form-select-sm example"
-              >
-                <option selected>Minha conta</option>
-                <option value="1">sair</option>
-              </select>
+            <div class="text-end btn-group section-user" id="section-user">
+              <div class="list-option">
+                <img src="/public/user.svg" alt="">
+                <div  class="list-user-section" >
+                  <ul>
+                    <li class="option">
+                      <a href="/src/user-data.html">Minha conta</a>
+                    </li class="option">
+                    <li><a href="/">Sair</a></li>
+                  </ul>
+                </div>
+              </div>
+
               <a
-                href="/src/register-page.html"
+                href="/src/register-recipe.html"
                 type="button"
                 class="btn col-sm-12"
-                >Ver minhas receitas</a
+                >Adicionar mais receitas +</a
               >
             </div>
 
@@ -123,14 +129,6 @@
       </header>
 
       <main class="my-5">
-        <section class="mb-5">
-          <div class="container col-sm-9 fw-bold add-recipes">
-            <a href="/src/register-recipe.html">
-              <h4>Adicionar mais receitas +</h4>
-            </a>
-          </div>
-        </section>
-
         <div
           class="container d-flex justify-content-center flex-column align-items-center list-recipes"
         >
@@ -235,6 +233,20 @@
         <!-- Copyright -->
       </footer>
     </div>
+
+    <script>
+      $('.list-option ul li.option').click(function () {
+        $(this).siblings().children().remove();
+        var a = $(this).siblings().toggle();
+        console.log($(a).is(':visible'));
+        $(this)
+          .siblings()
+          .append(
+            '<img src="https://cdn4.iconfinder.com/data/icons/6x16-free-application-icons/16/Delete.png" style="float:right; width:12px; height:12px;">'
+          );
+        // $(this).addClass('darr');
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

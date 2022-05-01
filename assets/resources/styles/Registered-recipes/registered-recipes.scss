@@ -38,6 +38,10 @@
               color: $dark-blue;
               width: 30%;
             }
+
+            td:nth-child(3),td:nth-child(4){
+              cursor: pointer;
+            }
           }
         }
       }
