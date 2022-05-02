@@ -28,8 +28,8 @@
 
     <!-- reset -->
 
-    <link rel="stylesheet" href="/assets/resources/styles/reset.css" />
     <link rel="stylesheet" href="/assets/resources/styles/main.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/reset.css" />
 
     <!-- bootstrap -->
     <link
@@ -45,13 +45,16 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- CSS created -->
     <link rel="stylesheet" href="/assets/resources/styles/header/header.css" />
     <link rel="stylesheet" href="/assets/resources/styles/footer/footer.css" />
-    <link rel="stylesheet" href="/assets/resources/styles/login/login.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/home/home.css" />
+    <link rel="stylesheet" href="/assets/resources/styles/modal/modal.css" />
   </head>
   <body>
-    <div class="page-login">
+    <div class="page-home login-off">
       <header class="p-3 bg-light text-black top-header">
         <div class="container">
           <div
@@ -67,6 +70,7 @@
             <div class="send-recipe btn-group">
               <a
                 class="btn text-uppercase border border-primary rounded-pill"
+                id="send-btn"
                 href="#"
                 role="button"
               >
@@ -85,6 +89,22 @@
               />
             </form>
 
+            <div class="text-end btn-group section-user">
+              <select
+                class="form-select form-select-lg"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Minha conta</option>
+                <option value="1">sair</option>
+              </select>
+              <a
+                href="/src/register-page.html"
+                type="button"
+                class="btn col-sm-12"
+                >Ver minhas receitas</a
+              >
+            </div>
+
             <div class="sign text-end btn-group">
               <a href="/src/login-page.html" type="button" class="sign-up me-2"
                 >Login</a
@@ -100,50 +120,33 @@
         </div>
       </header>
 
-      <main>
-        <div class="container my-5">
-          <div
-            class="d-flex flex-wrap align-items-center flex-column already-account__form login"
-          >
-            <h3>Entre com seu e-mail e senha:</h3>
+      <section class="modal" id="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
 
-            <div class="form-row">
-              <div class="form-group col-12 my-4">
-                <label for="email">*E-MAIL </label>
-                <input
-                  type="text"
-                  name="input_mail"
-                  class="form-control"
-                  id="email"
-                  placeholder="*E-MAIL"
-                />
-                <span id="has-error-email" class="error"></span>
-              </div>
+          <div class="d-flex justify-content-center title-modal">
+            <p class="text-center">
+              Por meio do cadastro você poderá cadastrar receitas, fazer
+              comentários e interagir com a comunidade . Venha fazer parte da
+              nossa comunidade de receitas!
+            </p>
+          </div>
 
-              <div class="form-group col-12 my-4">
-                <label for="password">*SENHA</label>
-                <input
-                  type="password"
-                  name="input_pass"
-                  class="form-control"
-                  id="password"
-                  placeholder="*SENHA"
-                  maxlength="10"
-                />
-                <span id="has-error-password" class="error"></span>
-              </div>
-            </div>
-
-            <div class="form-group form-group-submit col-12 text-center my-5">
-              <a href="/src/user-data.html">
-                <button type="submit" class="btn btn-primary btn btn-login">
-                  Entrar
-                </button>
-              </a>
-            </div>
+          <div class="sign text-end btn-group">
+            <a href="/src/login-page.html" type="button" class="sign-up me-2"
+              >Login</a
+            >
+            <a
+              href="/src/register-page.html"
+              type="button"
+              class="sign-in btn-2"
+              >Cadastre-se</a
+            >
           </div>
         </div>
-      </main>
+      </section>
+
 
       <footer class="text-center">
         <!-- Section: Social media -->
@@ -195,5 +198,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/libraries/swipe-library.js"></script>
+
+    <script src="/assets/resources/scripts/modal.js"></script>
   </body>
 </html>

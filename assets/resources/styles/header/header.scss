@@ -13,7 +13,7 @@
   text-decoration: none;
 }
 
-.login-off {
+@mixin headDefault {
   header.top-header {
     display: flex;
     align-items: center;
@@ -79,6 +79,14 @@
       color: $white-primary;
     }
   }
+}
+
+.page-login,
+.page-register {
+  @include headDefault();
+}
+.login-off {
+  @include headDefault();
 }
 
 .login-on {

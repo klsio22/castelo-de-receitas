@@ -1,5 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+.page-login header.top-header,
+.page-register header.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-login header.top-header .send-recipe a,
+.page-register header.top-header .send-recipe a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.page-login header.top-header .search,
+.page-register header.top-header .search {
+  margin-bottom: 2rem;
+}
+
+.page-login header.top-header .search img,
+.page-register header.top-header .search img {
+  position: relative;
+  left: 1rem;
+  top: 2.6rem;
+}
+
+.page-login header.top-header .search input,
+.page-register header.top-header .search input {
+  padding: 0.8rem 0 0.8rem 5rem;
+}
+
+.page-login header.top-header .sign,
+.page-register header.top-header .sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-login header.top-header .sign .sign-up,
+.page-login header.top-header .sign .sign-in,
+.page-register header.top-header .sign .sign-up,
+.page-register header.top-header .sign .sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 8rem;
+  height: 48px;
+  border-radius: 50px;
+  border: 2px solid #1fb3e3;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-login header.top-header .sign .sign-up,
+.page-register header.top-header .sign .sign-up {
+  color: #1fb3e3;
+}
+
+.page-login header.top-header .sign .sign-in,
+.page-register header.top-header .sign .sign-in {
+  background-color: #1fb3e3;
+  color: #fff;
+}
+
+.page-login header.top-header .section-user,
+.page-register header.top-header .section-user {
+  display: none;
+}
+
+.page-login header.top-header .title-main,
+.page-register header.top-header .title-main {
+  padding: 2vh 22.5vw;
+  background-color: #1fb3e3;
+  color: #fff;
+}
+
 .login-off header.top-header {
   display: -webkit-box;
   display: -ms-flexbox;
