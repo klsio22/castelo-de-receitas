@@ -68,17 +68,46 @@
         }
       }
 
-      .sector-comments{
+      .sector-comments {
+        .add-comments {
+          gap: 10px;
 
+          textarea {
+            min-height: 80px;
+            max-height: 180px;
+            background-color: $lighter-blue;
+            color: $black;
+          }
+
+          textarea:focus {
+            outline: 1px solid $darker-blue;
+          }
+        }
+
+        .area-btn {
+          .send-comment {
+            text-transform: uppercase;
+            border-radius: 50px;
+            background-color: #1fb3e3;
+            border: none;
+            font-size: 14px;
+          }
+        }
       }
     }
   }
 
-  .registered-comments{
-    
-    .view-comment{
+  .registered-comments {
+    .view-comment {
       background-color: $lighter-blue !important;
 
+      .group-view-user {
+        .user-name,
+        .likes,
+        .users-interaction {
+          gap: 10px;
+        }
+      }
     }
   }
 }

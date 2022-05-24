@@ -189,20 +189,25 @@
 
         <div class="container sector-comments">
           <div class="d-flex justify-content-center">
-            <div>
+            <div class="area-add-comments">
               <h4>Deixe seu comentário</h4>
               <div class="d-flex align-items-sm-start add-comments">
                 <img src="/public/user.svg" alt="Imagem do usuário" />
                 <textarea
+                  class="rounded-3 border border-primary"
                   name="text-comments"
                   id="text-comments"
-                  cols="45"
+                  cols="50"
                   rows="5"
                 ></textarea>
               </div>
               <div class="d-flex justify-content-end my-3 area-btn">
-                <button class="btn btn-primary send-comment" type="submit">
-                  Eviar
+                <button
+                  class="btn btn-primary send-comment"
+                  id="send-comment"
+                  type="submit"
+                >
+                  Enviar
                 </button>
               </div>
             </div>
@@ -211,33 +216,32 @@
       </main>
 
       <section class="container registered-comments">
-        <div class="rounded bg-primary my-3 p-3 view-comment">
-          <p class="mb-sm-5 comment" id="comment">
+        <div class="rounded-3 bg-primary my-3 p-3 view-comment">
+          <p class="mb-sm-5 pb-5 comment" id="comment">
             Gostei muito de ter feito esse prato
           </p>
 
           <div class="d-flex justify-content-between mt-sm-5 group-view-user">
             <div class="d-flex align-items-center user-name" id="user-name">
-              <img src="/public/user.svg" alt="Imagem do usuário" />
-              <span class="name-user" id="name-user">Rachel Laguna Martins</span>
+              <img src="/public/avatar.svg" alt="Imagem do usuário" />
+              <span class="name-user" id="name-user"
+                >Rachel Laguna Martins</span
+              >
             </div>
 
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center users-interaction">
               <div class="d-flex align-items-center likes">
                 <span class="numbers-likes" id="numbers-likes">2</span>
                 <img src="/public/like.svg" alt="icone de like" />
               </div>
-              <div>
+              <!-- <div class="remove-comment">
                 <img src="/public/trash-comment.svg" alt="Icone de lixeira" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
 
-        <div class="load-more">
-
-        </div>
-
+        <div class="load-more"></div>
       </section>
 
       <section class="modal" id="modal">

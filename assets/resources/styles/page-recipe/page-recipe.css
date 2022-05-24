@@ -58,7 +58,36 @@
   line-height: 2.5rem;
 }
 
+.page-recipe.login-off main .sector-comments .add-comments {
+  gap: 10px;
+}
+
+.page-recipe.login-off main .sector-comments .add-comments textarea {
+  min-height: 80px;
+  max-height: 180px;
+  background-color: #cef0f9;
+  color: #000;
+}
+
+.page-recipe.login-off main .sector-comments .add-comments textarea:focus {
+  outline: 1px solid #174459;
+}
+
+.page-recipe.login-off main .sector-comments .area-btn .send-comment {
+  text-transform: uppercase;
+  border-radius: 50px;
+  background-color: #1fb3e3;
+  border: none;
+  font-size: 14px;
+}
+
 .page-recipe .registered-comments .view-comment {
   background-color: #cef0f9 !important;
+}
+
+.page-recipe .registered-comments .view-comment .group-view-user .user-name,
+.page-recipe .registered-comments .view-comment .group-view-user .likes,
+.page-recipe .registered-comments .view-comment .group-view-user .users-interaction {
+  gap: 10px;
 }
 /*# sourceMappingURL=page-recipe.css.map */
