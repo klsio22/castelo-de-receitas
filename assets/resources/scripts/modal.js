@@ -24,7 +24,6 @@ const displayModal = {
   execute: function () {
     this.onClickBtn();
     this.closeModal();
-    this.verifyModal();
   },
 };
 
