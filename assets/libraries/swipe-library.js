@@ -1,4 +1,4 @@
-const swiper = new Swiper(".list-recipes", {
+const swiper = new Swiper('.list-recipes', {
   slidesPerView: 4,
   spaceBetween: 20,
   freeMode: false,

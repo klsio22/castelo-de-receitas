@@ -37,6 +37,7 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  width: 1rem;
 }
 
 .modal .modal-content .close:hover,
